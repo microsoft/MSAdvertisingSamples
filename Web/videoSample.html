@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="keywords" content="microsoft ads sdk, ads on web, microsoft apps" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Ads by Microsoft</title>
+    <link rel="SHORTCUT ICON" href="//www.microsoft.com/favicon.ico?v2" type="image/x-icon" />
+    <meta name="description" content="Sample page indicating the usage of the Microsoft Ads SDK" />
+    <link rel="stylesheet" href="https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.22.4/css/store-west-european-default.min.css"
+        type="text/css" media="all" />
+
+    <style>
+        [ng\:cloak],
+        [ng-cloak],
+        [data-ng-cloak],
+        [x-ng-cloak],
+        .ng-cloak,
+        .x-ng-cloak {
+            display: none !important;
+        }
+
+        .c-universal-header>div+div {
+            height: auto !important;
+        }
+
+        .lineHeight32 { line-height: 32px; }
+        .bold { font-weight: bold; }
+        .marginTop25 { margin-top: 25px; }
+        .marginTop50 { margin-top: 50px; }
+
+        .contentContainer {
+            padding: 2% 5%;
+            font-family: 'Segoe UI Light';
+        }
+
+        .contentContainer .pageTitle {
+            font-weight: 400;
+        }
+
+        .contentContainer .contentPane {
+            display: flex;
+            margin-top: 65px;
+            font-size: 14px;
+        }
+
+        .contentContainer .contentPane .leftPane .videoForm {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .contentContainer .contentPane .leftPane .videoForm label {
+            font-weight: 500;
+            line-height: 28px;
+        }
+
+        .contentContainer .contentPane .leftPane .videoForm input[type="text"] {
+            width: 400px;
+            padding: 5px;
+            border: 1px solid rgb(169, 169, 169);
+        }
+
+        .contentContainer .contentPane .leftPane input[type="button"] {
+            padding: 6px 20px;
+            background: rgb(76, 175, 80);
+            border: transparent;
+            background-color: rgb(76, 175, 80);
+            color: white;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .contentContainer .contentPane .leftPane input[type="button"]:hover { 
+            background-color: #64d668; 
+        }
+
+        .contentContainer .contentPane .rightPane { 
+            margin-left: 15%;
+        }
+
+        .contentContainer .contentPane .rightPane .videoContainer { 
+            width: 640px; 
+            height: 360px;
+        }
+
+        .contentContainer .contentPane .rightPane .videoContainer .videoPlayer {
+            background-color:black;
+            width: 640px; 
+            height: 360px;
+        }
+
+        .customFooter { width: 100%; display: block; bottom: 2px; position: fixed; }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div role="banner" class="c-universal-header context-uhf js" itemscope="itemscope" data-header-footprint="en-in/RetailStore2/RetailStore2Header"
+        itemtype="http://schema.org/Organization">
+        <div class="theme-light js-global-head f-closed " data-m="{&quot;cN&quot;:&quot;Universal Header_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;m1r1a1&quot;}">
+            <div>
+                <button class="c-action-trigger c-glyph glyph-global-nav-button" aria-label="Toggle menu" aria-expanded="false" data-m="{&quot;cN&quot;:&quot;Mobile menu button_nonnav&quot;,&quot;id&quot;:&quot;nn1c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1m1r1a1&quot;}"></button>
+                <button class="c-action-trigger c-glyph glyph-arrow-htmllegacy" aria-label="Close search" aria-expanded="false" data-m="{&quot;cN&quot;:&quot;Close Search_nonnav&quot;,&quot;id&quot;:&quot;nn2c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c1m1r1a1&quot;}"></button>
+                <a data-m="{&quot;pid&quot;:&quot;h:32f2fa12&quot;,&quot;id&quot;:&quot;n3c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c1m1r1a1&quot;}"
+                    id="uhfLogo" class="c-logo" itemprop="url" href="https://www.microsoft.com" aria-label="Microsoft">
+                    <img itemprop="logo" itemscope="itemscope" class="c-image x-hidden-focus" alt="Microsoft" src="https://assets.onestore.ms/cdnfiles/external/uhf/long/9a49a7e9d8e881327e81b9eb43dabc01de70a9bb/images/microsoft-gray.png">
+                    <span>Microsoft</span>
+                </a>
+                <div class="f-mobile-title">
+                    <button class="c-action-trigger c-glyph glyph-chevron-left" aria-label="See more menu options" data-m="{&quot;cN&quot;:&quot;Mobile back button_nonnav&quot;,&quot;id&quot;:&quot;nn5c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c1m1r1a1&quot;}"></button>
+                    <span data-global-title="Microsoft home" class="js-mobile-title">Store</span>
+                    <button class="c-action-trigger c-glyph glyph-chevron-right" aria-label="See more menu options" data-m="{&quot;cN&quot;:&quot;Mobile forward button_nonnav&quot;,&quot;id&quot;:&quot;nn6c1m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c1m1r1a1&quot;}"></button>
+                </div>
+
+                <nav id="uhf-g-nav" role="navigation" data-m="{&quot;cN&quot;:&quot;Global nav_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c7c1m1r1a1&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c1m1r1a1&quot;}">
+                    <ul>
+                        <li>
+                            <a id="shellmenu_0" hello="world" target="_blank" class="c-uhf-nav-link" href="https://www.microsoft.com/store" data-m="{&quot;cN&quot;:&quot;Store_nav&quot;,&quot;id&quot;:&quot;n1c7c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c7c1m1r1a1&quot;}">Store</a>
+                        </li>
+                        <li>
+                            <a id="l1_support" hello="world" class="c-uhf-nav-link" href="mailto:aiacare@microsoft.com?subject=Microsoft%20Video%20Ads%20Demo%20Page"
+                                data-m="{&quot;cN&quot;:&quot;Contact_nav&quot;,&quot;id&quot;:&quot;n4c7c1m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c7c1m1r1a1&quot;}">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+    <div class="contentContainer">
+        <h1 class="pageTitle">Video Ads Demo</h1>
+
+        <div class="contentPane">
+            <!-- LEFT PANE FOR CONFIG -->
+            <div class="leftPane">
+                <div class="lineHeight32">Enter the details below to test with your own adunit</div>
+                <div>
+                    <form name="videoForm" class="videoForm bold">
+                        <div>
+                            <label for="adUnitId">Ad unit ID</label>
+                        </div>
+                        <input type="text" value="" name="adUnitId" 
+                                id="adUnitId" placeholder="test" />
+                        
+                        <div class="marginTop25">
+                            <label for="applicationId">Application ID</label>
+                        </div>
+                        <input type="text" value="" name="applicationId" 
+                                id="applicationId" placeholder="applicationId" />
+                    </form>
+                </div>
+                <div class="marginTop50">
+                    <input type="button" class="testAdBtn" value="TEST AD" id="testAdBtn" />
+                </div>
+            </div>
+            <!-- END LEFT PANE FOR CONFIG -->
+
+            <!-- RIGHT PANE FOR AD -->
+            <div class="rightPane">
+                <div class="lineHeight32">Ad video</div>
+                <div class="videoContainer">
+                    <!-- VIDEO AD SLOT -->
+                    <div id='slot'>
+                        <video id='videoPlayer' class="videoPlayer" autoplay 
+                            poster="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAB3RJTUUH4gMMBjgnLDagYwAABlRJREFUeNrt2qFL63scxvHnXAwTDDYHtjmLUcEgCwbTBI1WsYrFIhhkIIoaBYOCItgG7g8wyFDTkmBQDGLQIoYFg6CwW86FC/ecO83n9YIPLD/w4x32/ZGkEwD4pr9MAICAACAgAAgIAAICAAICgIAAICAACAgAAgIAAgKAgAAgIAAICAACAgACAoCAACAgAAgIAAICAAICgIAAICAACAgAAgIAAgKAgAAgIAAICAACAgACAoCAACAgAAgIAAICAAICgIAAICAACAgACAgAAgKAgAAgIAAICAAICAACAoCAACAgAAgIAAgIAAICgIAAICAACAgACAgAAgKAgAAgIAAICAAICAACAoCAACAgAAgIAAgIAAICgIAAICAACAgACAgAAgKAgAAgIAAICAAICAACAoCAACAgACAgAAgIAAICgIAAICAAICAACAgAAgKAgAAgIAAgIAAICAACAoCAACAgACAgAAgIAAICgIAAICAAICAACAgAAgKAgAAgIAAgIAAICAACAoCAACAgACAgAAgIAAICgIAAgIAAICAACAgAAgKAgACAgAAgIAAICAACAoCAAICAACAgAAgIAAICgIAAgIAAICAACAgAAgKAgACAgAAgIAAICAACAoCAAICAACAgAAgIAAICgIAAgIAAICAACAgAAgKAgACAgAAgIAAICAACAgACAoCAACAgAAgIAAICAAICgIAAICAACAgAAgIAAgKAgAAgIAAICAACAgACAoCAACAgAAgIAAICAAICgIAAICAACAgAAgIAAgKAgAAgIAAICAACAgACAoCAACAgAAgIAAgIAAICgIAAICAACAgACAh/ukKhkEajkVarlfn5+fT09BgFBAS6m52dTblczv7+fjY3N9NqtTI9PW0YEBD4f729vXl9fc3h4WFKpVLq9XpOTk5yfn6esbExA4GAQHfv7+/Z2tpKqVTK9fV1Li8vU6/XMzQ0ZBwQEOiu3W5neXk5IyMjeXt7y+3tbXZ3d1MsFo0DAgLdPT4+ZmFhIePj4ymXy7m/v0+tVkuhUDAOCAh0d319nWq1mpmZmczMzOTh4cGLLRAQ+Lpms5nR0dGsrq5mbW0trVYrk5OThkFAgK85Pj7OyMhI6vV6Go1GKpWKURAQ4Gve399zd3eXt7e3DAwMGAQBAbqrVCq5uLjI0dFRtre3c3p6ahQEBPi9oaGhNBqNnJ2d5erqKqVSKXt7e4ZBQIBfKxaLOTg4yM3NTdrtdoaHh7O6upp2u20cBMQE8F/9/f2p1Wp5eHhIsVjMxMREFhYW8vz8bBz4yWN2+PcH0dOTxcXFrKys5OnpKdVqNc1m0zAgIPB7c3NzWV9fT5IsLS35gxwEBH7t4+MjhUIhU1NT2dnZSbFYzMbGRvb39/P5+Wkg+IKOc3/iDQ4Ods7PzzsvLy+dWq3W6evrs4tz37gfP38AwLd4hQWAgAAgIAAICAACAgACAoCAACAgAAgIAAICAAICgIAAICAACAgAAgIAAgKAgAAgIAAICAACAgACAoCAACAgAAgIAAICAAICgIAAICAACAgAAgIAAgKAgAAgIAAICAACAgACAoCAACAgAAgIAAgIAAICgIAAICAACAgACAgAAgKAgAAgIAAICAAICAACAoCAACAgAAgIAAgIAAICgIAAICAACAgACAgAAgKAgAAgIAAICAAICAACAoCAACAgAAgIAAgIAAICgIAAICAACIgJABAQAAQEAAEBQEAAQEAAEBAABAQAAQFAQABAQAAQEAAEBAABAUBAAEBAABAQAAQEAAEBQEAAQEAAEBAABAQAAQFAQABAQAAQEAAEBAABAUBAAEBAABAQAAQEAAEBQEAAQEAAEBAABAQAAQEAAQFAQAAQEAAEBAABAQABAUBAABAQAAQEAAEBAAEBQEAAEBAABAQAAQEAAQFAQAAQEAAEBAABAQABAUBAABAQAAQEAAEBAAEBQEAAEBAABAQAAQEAAQFAQAAQEAAEBAABAQABAUBAABAQAAQEAAQEAAEBQEAAEBAABAQABAQAAQFAQAAQEAAEBAAEBAABAUBAABAQAAQEAAQEAAEBQEAAEBAABAQABAQAAQFAQAAQEAAEBAAEBAABAUBAABAQAAQEAAQEAAEBQEAAEBAAEBAABAQAAQFAQAAQEAD4x9/1/zePhT7hlAAAAABJRU5ErkJggg=="></video>
+                    </div>
+                    <!-- END VIDEO AD SLOT -->
+                </div>
+            </div>
+            <!-- END RIGHT PANE FOR AD -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://msmonplat.microsoft.com/core/1/latest.min.js"></script>
+
+    <script>
+        document
+            .getElementById('testAdBtn')
+            .addEventListener('click', function () {
+                var adunitId = document.getElementById("adUnitId").text || 'test';
+                var applicationId = document.getElementById("applicationId").text || 'test';
+
+                // Call the ads SDK with the config.
+                microsoftAdsSdk
+                    .ads
+                    .fetch([getVideoAdRequest(adunitId, applicationId, 640, 360)]);
+            });
+
+        /**
+         * Callback called when the ad is ready.
+         */
+        function onVideoAdReady(adObject) {
+            console.log('AdObject: ' + JSON.stringify(adObject));
+
+            // Show the ad. 
+            microsoftAdsSdk
+                .ads
+                .showAd(adObject);
+        }
+
+        /**
+         * Callback called when the ad has ended.
+         */
+        function onVideoAdEnd(adObject) {
+            document.getElementById('adsVideoPlayer').style.display = 'block';
+            document.getElementById('slot').style.display = 'block';
+        }
+
+        /**
+         * Callback called when there was an error fetching/rendering the ad. 
+         */
+        function onVideoAdError(adObject, errorResponse) {
+            console.error('AdObject: ' + JSON.stringify(adObject) + '; error: ' + JSON.stringify(errorResponse));
+            document.getElementById('adsVideoPlayer').style.display = 'block';
+            document.getElementById('slot').style.display = 'block';
+        }        
+
+        /** 
+         * Returns the request object needed by the ads SDK 
+         */
+        function getVideoAdRequest(adUnitId, applicationId, containerWidth, containerHeight) { 
+            return {
+                adUnitId: adUnitId,
+                applicationId: applicationId,
+                format: "video",
+                overrides: { 'imp[0].video.w': containerWidth, 'imp[0].video.h': containerHeight },
+                settings: {
+                    videoSlot: 'videoPlayer', 
+                    slot: 'slot', 
+                    onAdError: onVideoAdError, 
+                    onAdEnd: onVideoAdEnd, 
+                    onAdReady: onVideoAdReady, 
+                    isSite: true,
+                    timeouts: { 
+                        adReady: 30, /* 30 seconds ad ready timeout */
+                        adStart: 5  /* 5 seconds ad play timeout */
+                    }
+                }
+            };
+        }
+    </script>
+
+    <!-- FOOTER -->
+    <div class="customFooter c-universal-footer context-uhf" data-uhf-greenid="true"
+        data-footer-footprint="en-in/RetailStore2/RetailStore2Footer" data-m="{&quot;cN&quot;:&quot;Uhf footer_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1m2r1a3&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;m2r1a3&quot;}">
+        <section>
+            <ul role="contentinfo" class="c-list f-bare" data-m="{&quot;cN&quot;:&quot;Corp links_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c8c1c1m2r1a3&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c1c1m2r1a3&quot;}">
+                <li>
+                    <a class="c-hyperlink" target="_blank" href="mailto:aiacare@microsoft.com;storeadops@microsoft.com?subject=Microsoft%20Premium%20Ads%20Publisher%20Program"
+                        data-m="{&quot;cN&quot;:&quot;Footer_ContactUs_nav&quot;,&quot;id&quot;:&quot;n1c8c1c1m2r1a3&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c8c1c1m2r1a3&quot;}">Contact us</a>
+                </li>
+                <li>
+                    <a class="c-hyperlink" target="_blank" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-m="{&quot;cN&quot;:&quot;Footer_PrivacyandCookies_nav&quot;,&quot;id&quot;:&quot;n2c8c1c1m2r1a3&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c8c1c1m2r1a3&quot;}">Privacy &amp; Cookies</a>
+                </li>
+                <li>
+                    <a class="c-hyperlink" target="_blank" href="https://go.microsoft.com/fwlink/?LinkID=206977" data-m="{&quot;cN&quot;:&quot;Footer_TermsofUse_nav&quot;,&quot;id&quot;:&quot;n3c8c1c1m2r1a3&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c8c1c1m2r1a3&quot;}">Terms of Use</a>
+                </li>
+                <li>
+                    <a class="c-hyperlink" target="_blank" href="http://go.microsoft.com/fwlink/?LinkID=530144" data-m="{&quot;cN&quot;:&quot;Footer_MicrosoftServicesAgreement_nav&quot;,&quot;id&quot;:&quot;n5c8c1c1m2r1a3&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c8c1c1m2r1a3&quot;}">Microsoft Services Agreement</a>
+                </li>
+                <li>
+                    <a class="c-hyperlink" target="_blank" href="https://www.microsoft.com/trademarks" data-m="{&quot;cN&quot;:&quot;Footer_Trademarks_nav&quot;,&quot;id&quot;:&quot;n6c8c1c1m2r1a3&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c8c1c1m2r1a3&quot;}">Trademarks</a>
+                </li>
+
+                <li>© Microsoft 2018</li>
+            </ul>
+        </section>
+    </div>
+    <!-- END FOOTER -->
+
+</body>
+</html>

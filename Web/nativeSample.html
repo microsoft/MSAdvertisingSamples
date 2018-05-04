@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="keywords" content="microsoft ads sdk, ads on web, microsoft apps" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Native Ads by Microsoft</title>
+    <link rel="SHORTCUT ICON" href="//www.microsoft.com/favicon.ico?v2" type="image/x-icon" />
+    <meta name="description" content="Sample page indicating the usage of the Microsoft Ads SDK" />
+    <link rel="stylesheet" href="https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.22.4/css/store-west-european-default.min.css"
+        type="text/css" media="all" />
+
+    <style>
+        [ng\:cloak],
+        [ng-cloak],
+        [data-ng-cloak],
+        [x-ng-cloak],
+        .ng-cloak,
+        .x-ng-cloak {
+            display: none !important;
+        }
+
+        .c-universal-header>div+div {
+            height: auto !important;
+        }
+
+        .lineHeight32 { line-height: 32px; }
+        .bold { font-weight: bold; }
+        .displayNone { display: none; }
+        .marginTop25 { margin-top: 25px; }
+        .marginTop30 { margin-top: 30px; }
+        .marginTop50 { margin-top: 50px; }
+
+        .contentContainer {
+            padding: 2% 5%;
+            font-family: 'Segoe UI Light';
+        }
+
+        .contentContainer .pageTitle {
+            font-weight: 400;
+        }
+
+        .contentContainer .contentPane {
+            display: flex;
+            margin-top: 65px;
+            font-size: 14px;
+        }
+
+        .contentContainer .contentPane .leftPane {
+            max-width: 30%;
+        }
+
+        .contentContainer .contentPane .leftPane .nativeAdForm {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .contentContainer .contentPane .leftPane .nativeAdForm label {
+            font-weight: 500;
+            line-height: 28px;
+        }
+
+        .contentContainer .contentPane .leftPane .nativeAdForm input[type="text"] {
+            width: 400px;
+            padding: 5px;
+            border: 1px solid rgb(169, 169, 169);
+        }
+
+        .contentContainer .contentPane .leftPane input[type="button"] { 
+            padding: 6px 20px;
+            background: rgb(76, 175, 80);
+            border: transparent;
+            background-color: rgb(76, 175, 80);
+            color: white;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .contentContainer .contentPane .leftPane input[type="button"]:hover {
+            background-color: #64d668;
+        }
+
+        .customFooter { width: 100%; display: block; bottom: 2px; position: fixed; }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div role="banner" class="c-universal-header context-uhf js" itemscope="itemscope" data-header-footprint="en-in/RetailStore2/RetailStore2Header"
+        itemtype="http://schema.org/Organization">
+        <div class="theme-light js-global-head f-closed " data-m="{&quot;cN&quot;:&quot;Universal Header_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;m1r1a1&quot;}">
+            <div>
+                <button class="c-action-trigger c-glyph glyph-global-nav-button" aria-label="Toggle menu" aria-expanded="false" data-m="{&quot;cN&quot;:&quot;Mobile menu button_nonnav&quot;,&quot;id&quot;:&quot;nn1c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1m1r1a1&quot;}"></button>
+                <button class="c-action-trigger c-glyph glyph-arrow-htmllegacy" aria-label="Close search" aria-expanded="false" data-m="{&quot;cN&quot;:&quot;Close Search_nonnav&quot;,&quot;id&quot;:&quot;nn2c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c1m1r1a1&quot;}"></button>
+                <a data-m="{&quot;pid&quot;:&quot;h:32f2fa12&quot;,&quot;id&quot;:&quot;n3c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c1m1r1a1&quot;}"
+                    id="uhfLogo" class="c-logo" itemprop="url" href="https://www.microsoft.com" aria-label="Microsoft">
+                    <img itemprop="logo" itemscope="itemscope" class="c-image x-hidden-focus" alt="Microsoft" src="https://assets.onestore.ms/cdnfiles/external/uhf/long/9a49a7e9d8e881327e81b9eb43dabc01de70a9bb/images/microsoft-gray.png">
+                    <span>Microsoft</span>
+                </a>
+                <div class="f-mobile-title">
+                    <button class="c-action-trigger c-glyph glyph-chevron-left" aria-label="See more menu options" data-m="{&quot;cN&quot;:&quot;Mobile back button_nonnav&quot;,&quot;id&quot;:&quot;nn5c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c1m1r1a1&quot;}"></button>
+                    <span data-global-title="Microsoft home" class="js-mobile-title">Store</span>
+                    <button class="c-action-trigger c-glyph glyph-chevron-right" aria-label="See more menu options" data-m="{&quot;cN&quot;:&quot;Mobile forward button_nonnav&quot;,&quot;id&quot;:&quot;nn6c1m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c1m1r1a1&quot;}"></button>
+                </div>
+
+                <nav id="uhf-g-nav" role="navigation" data-m="{&quot;cN&quot;:&quot;Global nav_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c7c1m1r1a1&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c1m1r1a1&quot;}">
+                    <ul>
+                        <li>
+                            <a id="shellmenu_0" hello="world" target="_blank" class="c-uhf-nav-link" href="https://www.microsoft.com/store" data-m="{&quot;cN&quot;:&quot;Store_nav&quot;,&quot;id&quot;:&quot;n1c7c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c7c1m1r1a1&quot;}">Store</a>
+                        </li>
+                        <li>
+                            <a id="l1_support" hello="world" class="c-uhf-nav-link" href="mailto:aiacare@microsoft.com?subject=Microsoft%20Native%20Ads%20Demo%20Page"
+                                data-m="{&quot;cN&quot;:&quot;Contact_nav&quot;,&quot;id&quot;:&quot;n4c7c1m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c7c1m1r1a1&quot;}">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+
+    <div class="contentContainer">
+        <h1 class="pageTitle">Native Ads Demo</h1>
+
+        <div class="contentPane">
+            <!-- LEFT PANE FOR CONFIG -->
+            <div class="leftPane">
+                <div class="lineHeight32">Enter the details below to test with your own adunit</div>
+                <div>
+                    <form name="nativeAdForm" class="nativeAdForm">
+                        <div>
+                            <label for="adUnitId">Ad unit ID</label>
+                        </div>
+                        <input type="text" value="" name="adUnitId" id="adUnitId" placeholder="test" />
+                        <div class="marginTop25">
+                            <label for="applicationId">Application ID</label>
+                        </div>
+                        <input type="text" value="" name="applicationId" id="applicationId" placeholder="applicationId" />
+                    </form>
+                </div>
+                <div class="marginTop50">
+                    <input type="button" class="testAdBtn" value="TEST AD" id="testAdBtn" />
+                </div>
+
+                <div id="adResponseContainer" class="displayNone marginTop30">
+                    <div class="lineHeight32 bold">Raw ad Response</div>
+                    <div id="adResponse"></div>
+                </div>
+            </div>
+            <!-- END LEFT PANE FOR CONFIG -->
+
+            <!-- RIGHT PANE FOR AD -->
+            <div class="displayNone" style="margin-left: 15%;" id="sampleNativeAdContainer">
+                <div class="lineHeight32">Sample native ad</div>
+                <div>
+                    <div id='slot' style="border: 1px solid grey;position: relative;">
+                        <img id="adImage" style="width: 300px;"></img>
+                        <div id="adTitle" style="padding: 12px; font-weight: 700; text-align: center; font-size: 16px;"></div>
+                        <div id="adDescription" style="padding: 12px; text-align: center; padding-top: 0;"></div>
+                        <span style="position: absolute;top: 0px;right: 0px; background-color: black; color: white; font-size: 0.8em;padding: 3px 10px;">AD</span>
+                    </div>
+                </div>
+            </div>
+            <!-- END RIGHT PANE FOR AD -->
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <script src="https://msmonplat.microsoft.com/core/1/latest.min.js"></script>
+
+        <script>
+            document
+                .getElementById('testAdBtn')
+                .addEventListener('click', function () {
+                    var adunitId = document.getElementById("adUnitId").text || 'test';
+                    var applicationId = document.getElementById("applicationId").text || 'test';
+
+                    // Call the ads SDK with the config.
+                    microsoftAdsSdk
+                        .ads
+                        .fetch([getNativeAdRequest(adunitId, applicationId)]);
+                });
+
+            /**
+             * Callback called when the ad is ready.
+             */
+            function onNativeAdReady(adObject, nativeAdOject) {
+                console.log('AdObject: ' + JSON.stringify(adObject));
+                console.log('Native adObject: ' + JSON.stringify(nativeAdOject));
+
+                // Dump the content inside the adResponse just for displaying
+                document
+                    .getElementById('adResponse')
+                    .innerText = JSON.stringify(nativeAdOject);
+
+                document
+                    .getElementById('adResponseContainer')
+                    .style.display = 'block';
+
+                document
+                    .getElementById('sampleNativeAdContainer')
+                    .style.display = 'block';
+
+                // Show the ad
+                document
+                    .getElementById('adTitle')
+                    .innerText = nativeAdOject.title;
+
+                document
+                    .getElementById('adDescription')
+                    .innerText = nativeAdOject.description;
+
+                document
+                    .getElementById('adImage')
+                    .src = nativeAdOject.mainImages[0].source;
+
+                microsoftAdsSdk
+                    .ads
+                    .showAd(adObject);
+            }
+
+            /**
+             * Callback called when there was an error fetching/rendering the ad. 
+             */
+            function onNativeAdError(adObject, errorResponse) {
+                console.error('AdObject: ' + JSON.stringify(adObject) + '; error: ' + JSON.stringify(errorResponse));
+            }
+
+            /** 
+             * Returns the request object needed by the ads SDK 
+             */
+            function getNativeAdRequest(adUnitId, applicationId) {
+                return {
+                    adUnitId: adUnitId,
+                    applicationId: applicationId,
+                    format: "native",
+                    settings: {
+                        slot: 'slot',  // ID of the container where we would show the native ad.
+                        onAdError: onNativeAdError,
+                        onAdReady: onNativeAdReady,
+                        isSite: true
+                    }
+                };
+            }
+        </script>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="customFooter c-universal-footer context-uhf" data-uhf-greenid="true"
+        data-footer-footprint="en-in/RetailStore2/RetailStore2Footer" data-m="{&quot;cN&quot;:&quot;Uhf footer_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1m2r1a3&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;m2r1a3&quot;}">
+        <section>
+            <ul role="contentinfo" class="c-list f-bare" data-m="{&quot;cN&quot;:&quot;Corp links_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c8c1c1m2r1a3&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c1c1m2r1a3&quot;}">
+                <li>
+                    <a class="c-hyperlink" target="_blank" href="mailto:aiacare@microsoft.com;storeadops@microsoft.com?subject=Microsoft%20Premium%20Ads%20Publisher%20Program"
+                        data-m="{&quot;cN&quot;:&quot;Footer_ContactUs_nav&quot;,&quot;id&quot;:&quot;n1c8c1c1m2r1a3&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c8c1c1m2r1a3&quot;}">Contact us</a>
+                </li>
+                <li>
+                    <a class="c-hyperlink" target="_blank" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-m="{&quot;cN&quot;:&quot;Footer_PrivacyandCookies_nav&quot;,&quot;id&quot;:&quot;n2c8c1c1m2r1a3&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c8c1c1m2r1a3&quot;}">Privacy &amp; Cookies</a>
+                </li>
+                <li>
+                    <a class="c-hyperlink" target="_blank" href="https://go.microsoft.com/fwlink/?LinkID=206977" data-m="{&quot;cN&quot;:&quot;Footer_TermsofUse_nav&quot;,&quot;id&quot;:&quot;n3c8c1c1m2r1a3&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c8c1c1m2r1a3&quot;}">Terms of Use</a>
+                </li>
+                <li>
+                    <a class="c-hyperlink" target="_blank" href="http://go.microsoft.com/fwlink/?LinkID=530144" data-m="{&quot;cN&quot;:&quot;Footer_MicrosoftServicesAgreement_nav&quot;,&quot;id&quot;:&quot;n5c8c1c1m2r1a3&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c8c1c1m2r1a3&quot;}">Microsoft Services Agreement</a>
+                </li>
+                <li>
+                    <a class="c-hyperlink" target="_blank" href="https://www.microsoft.com/trademarks" data-m="{&quot;cN&quot;:&quot;Footer_Trademarks_nav&quot;,&quot;id&quot;:&quot;n6c8c1c1m2r1a3&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c8c1c1m2r1a3&quot;}">Trademarks</a>
+                </li>
+
+                <li>© Microsoft 2018</li>
+            </ul>
+        </section>
+    </div>
+    <!-- END FOOTER -->
+
+</body>
+</html>
