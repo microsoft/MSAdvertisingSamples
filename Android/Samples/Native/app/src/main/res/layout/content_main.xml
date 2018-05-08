@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:id="@+id/adsContainer"
+        android:layout_width="336dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="115dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/adImage"
+            android:layout_width="match_parent"
+            android:layout_height="189dp"
+            android:contentDescription="@string/the_image_in_the_native_ad" />
+
+        <TextView
+            android:id="@+id/adTitle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/adImage"
+            android:background="#ff4081"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="-54dp"
+            android:layout_toRightOf="@+id/adImage"
+            android:width="30dp"
+            android:height="18dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="AD"
+            android:textColor="@android:color/background_light"
+            android:textIsSelectable="false"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

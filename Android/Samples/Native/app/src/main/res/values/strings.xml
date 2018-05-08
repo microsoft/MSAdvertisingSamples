@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Native</string>
+    <string name="action_settings">Settings</string>
+    <string name="the_image_in_the_native_ad">The image in the native ad</string>
+</resources>
