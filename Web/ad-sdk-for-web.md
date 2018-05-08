@@ -1,8 +1,3 @@
-﻿---
-author: mcleanbyron
-description: Get started with the Microsoft Advertising SDK in your websites.
-title: Get started with the Microsoft Advertising SDK in your websites
----
 
 # Get started with the Microsoft Advertising SDK in your websites (beta)
 
