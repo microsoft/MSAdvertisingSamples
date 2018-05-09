@@ -10,7 +10,7 @@ This guide describes how to import the Microsoft Advertising SDK for Android int
 
 ## Prerequisites
 
-* Microsoft Advertising SDK for Android. Currently, this SDK is currently only available as a private beta. To request access, send us an email at aiacare@microsoft.com.
+* The Microsoft Advertising SDK for Android. Currently, this SDK is currently only available as a private beta. To request access, send us an email at aiacare@microsoft.com.
 * [Android Studio](https://developer.android.com/studio/) version 1.0 or a later version.
 * The [minSdkVersion](https://developer.android.com/guide/topics/manifest/uses-sdk-element) attribute in your project targets [API Level](https://developer.android.com/guide/topics/manifest/uses-sdk-element#ApiLevels) 16 or higher.
 * To show live ads in the public version of your app, you must get a live [ad unit](#ad-units) ID to use in your code. To get a live ad unit ID, send us an email at aiacare@microsoft.com.
@@ -19,8 +19,7 @@ This guide describes how to import the Microsoft Advertising SDK for Android int
 
 Currently, the Microsoft Advertising SDK for Android is not available via the Maven repository. You must include the AAR file for the SDK directly into your project.
 
-> [!NOTE]
-> The following instructions assume that you have already downloaded the AAR file for the Microsoft Advertising SDK for Android. The SDK is currently available as a private beta. To request access to the SDK, please reach out to us at aiacare@microsoft.com.
+> **Note**&nbsp;&nbsp;The following instructions assume that you have already downloaded the AAR file for the Microsoft Advertising SDK for Android. The SDK is currently available as a private beta. To request access to the SDK, please reach out to us at aiacare@microsoft.com.
 
   1. Create a **libs** folder under the app folder of your project if it doesn’t already exist, and copy the AAR file for the SDK to this folder. Make sure the  **Project** tab is selected. If **Android** or any other tab is selected, use the triangle button to switch to **Project**.
 
@@ -73,7 +72,6 @@ Currently, the Microsoft Advertising SDK for Android is not available via the Ma
 
   6. Save the buld.gradle file and perform a Gradle sync.
 
-
 ## Add an interstitial video ad
 
 Interstitial video ads are ads that occur full screen at a specific moment in your app. Because these ads are interstitial ads, they block the user flow on your app, and therefore you should strategically choose when to show these ads.
@@ -108,8 +106,7 @@ Add a view to your **Activity** or **Fragment** layout where you want the inters
 </RelativeLayout>
 ```
 
-> [!IMPORTANT]
-> Because interstitial ads occupy the full screen, the dimensions of the view which you pass to the **AdControl** constructor is altered by the **AdControl**. Therefore, the **AdControl** should have a **RelativeLayout** as its parent in order for it to be full screen.
+> **Important**&nbsp;&nbsp;Because interstitial ads occupy the full screen, the dimensions of the view which you pass to the **AdControl** constructor is altered by the **AdControl**. Therefore, the **AdControl** should have a **RelativeLayout** as its parent in order for it to be full screen.
 
 ### Display the ad
 
@@ -226,8 +223,7 @@ public class MapsActivity extends FragmentActivity {
 }
 ```
 
-> [!NOTE]
-> For interstitial video ads, users have an option to skip the ad after 5 seconds.
+> **Note**&nbsp;&nbsp;For interstitial video ads, users have an option to skip the ad after 5 seconds.
 
 ## Add a native ad
 
@@ -380,8 +376,7 @@ public class MapsActivity extends FragmentActivity {
 
 The **NativeAd** object contains various assets that you can integrate into your app using your own choice of fonts, colors and animations.  
 
-> [!NOTE]
-> It is required that you show the description and title.
+> **Note**&nbsp;&nbsp;At a minimum, you must show the description and title in your native creative.
 
 |  Property  |  Description  |
 |------------|---------------|
@@ -402,6 +397,6 @@ The **iconImage** and **mainImages** properties contain **NativeAdImage** object
 
 ## Ad units
 
-When you add code to display ads in your app, you must pass an ad unit ID to the *adUnitId* parameter of the **AdControl** constructor. To test your code, pass the string *test* to the **adUnitId** parameter of the **AdControl** constructor. This retrieves a test ad from our service. Test ads can only be used in a test version of your app.
+When you add code to display ads in your app, you must pass an ad unit ID to the *adUnitId* parameter of the **AdControl** constructor. To test your code, pass the string **test** to the *adUnitId* parameter. This retrieves a test ad from our service. Test ads can only be used in a test version of your app.
 
 For the public version of your app that is available to customers, you must update your code to pass a live ad unit ID to the *adUnitId* parameter. To get a live ad unit ID that you can use with the beta release of the Microsoft Advertising SDK for Android, send us an email at aiacare@microsoft.com.
